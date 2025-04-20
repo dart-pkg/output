@@ -24,3 +24,7 @@
 ## 1.0.2
 
 - Added: echoJson() and dumpJson()
+
+## 1.0.3
+
+- Improved echoJson() and dumpJson()

@@ -1,5 +1,6 @@
 import 'package:test/test.dart';
 import 'package:output/output.dart';
+//import 'package:textdata/textdata.dart' as td;
 
 final testData = {
   'name': 'Joe',
@@ -13,8 +14,10 @@ void main() {
     test('run1', () {
       echo(testData);
       dump(testData);
-      echoJson(testData, 'testData'); // 1.0.2
-      dumpJson(testData, 'testData'); // 1.0.2
+      echoJson(testData, 'testData');
+      dumpJson(testData, 'testData');
+      echoYaml(testData, 'testData');
+      dumpYaml(testData, 'testData');
     });
     test('run2', () {
       dump('this is run2');

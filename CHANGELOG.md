@@ -28,3 +28,7 @@
 ## 1.0.3
 
 - Improved echoJson() and dumpJson()
+
+## 1.0.4
+
+- Added: echoYaml() and dumpYaml()

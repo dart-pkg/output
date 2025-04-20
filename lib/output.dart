@@ -22,6 +22,7 @@ void echo(dynamic $x, [String? $title]) {
   }
 }
 
+// v1.0.2
 void echoJson(dynamic $x, [String? $title]) {
   String $json = convert.jsonEncode($x);
   if ($title == null) {
@@ -54,6 +55,7 @@ void dump(dynamic $x, [String? $title]) {
   }
 }
 
+// v1.0.2
 void dumpJson(dynamic $x, [String? $title]) {
   final $lines = _textToLines(StackTrace.current.toString());
   String $line = '';

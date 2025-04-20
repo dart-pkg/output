@@ -1,9 +1,40 @@
 #! /usr/bin/bash
 set -uvx
 set -e
+cwd=`pwd`
+#ts=`date "+%Y.%m%d.%H%M"`
+#version="${ts//.0/.}"
+version=`cat version.txt`
+comment=$1
+
+echo [${version}]
+
+pubspec "$version"
+#dart pub get
+
+#exit 0
+
+cat << EOS >> CHANGELOG.md
+
+## $version
+
+- $comment
+EOS
+
+dos2unix pubspec.yaml
+dos2unix CHANGELOG.md
+
 ./do-analyze.sh
 ./do-test.sh
-dart pub publish
+
+#exit 0
+
+tag="$version"
 git add .
-git commit -m.
-git push
+git commit -m"$comment"
+git tag -a "$tag" -m"$tag"
+git push origin "$tag"
+git push origin HEAD:main
+git remote -v
+
+#dart pub publish --force

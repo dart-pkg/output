@@ -1,19 +1,26 @@
-## 1.0.1
+# CHANGELOG.md
 
-- Moved to new repository
+## 0.0.1
 
-## 1.0.0
-
-- Official release
-
-## 0.0.3
-
-- Fixed bug for stack trace display
+- Initial release
 
 ## 0.0.2
 
 - Fixed bug for stack trace display
 
-## 0.0.1
 
-- Initial release
+## 0.0.3
+
+- Fixed bug for stack trace display
+
+## 1.0.0
+
+- Official release
+
+## 1.0.1
+
+- Moved to new repository
+
+## 1.0.2
+
+- Added: echoJson() and dumpJson()

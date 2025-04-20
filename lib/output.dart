@@ -1,6 +1,6 @@
 import 'dart:core';
 import 'dart:convert' as convert;
-import 'package:textdata/textdata.dart' as td;
+import 'package:text_serializer/text_serializer.dart' as ts;
 
 bool get _isInDebugMode {
   bool inDebugMode = false;
@@ -26,7 +26,7 @@ void echo(dynamic $x, [String? $title]) {
 // since v1.0.2
 void echoJson(dynamic $x, [String? $title]) {
   //String $json = convert.jsonEncode($x);
-  String $json = td.toJson($x, '  ');
+  String $json = ts.toJson($x, '  ');
   if ($title == null) {
     print($json);
   } else {
@@ -36,7 +36,7 @@ void echoJson(dynamic $x, [String? $title]) {
 
 // since v1.0.4
 void echoYaml(dynamic $x, [String? $title]) {
-  String $json = '[YAML]```\n${td.toYaml($x)}\n```[/YAML]';
+  String $json = '[YAML]```\n${ts.toYaml($x)}\n```[/YAML]';
   if ($title == null) {
     print($json);
   } else {
@@ -84,7 +84,7 @@ void dumpJson(dynamic $x, [String? $title]) {
   final $lineInfo = '@ ${$line}';
   String $mode = _isInDebugMode ? 'DEBUG' : 'RELEASE';
   //String $json = convert.jsonEncode($x);
-  String $json = td.toJson($x, '  ');
+  String $json = ts.toJson($x, '  ');
   if ($title == null) {
     print('[${$mode}] ${$lineInfo}\n${$json}');
   } else {
@@ -108,7 +108,7 @@ void dumpYaml(dynamic $x, [String? $title]) {
   }
   final $lineInfo = '@ ${$line}';
   String $mode = _isInDebugMode ? 'DEBUG' : 'RELEASE';
-  String $json = '[YAML]```\n${td.toYaml($x)}\n```[/YAML]';
+  String $json = '[YAML]```\n${ts.toYaml($x)}\n```[/YAML]';
   if ($title == null) {
     print('[${$mode}] ${$lineInfo}\n${$json}');
   } else {

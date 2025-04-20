@@ -1,6 +1,6 @@
 name: output
 description: output package project
-version: 1.0.4
+version: 1.0.5
 homepage:
 repository: https://github.com/dart-pkg/output
 
@@ -8,7 +8,7 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
-  textdata: ^2025.421.732
+  text_serializer: ^2025.421.821
 
 dev_dependencies:
   test: ^1.25.15

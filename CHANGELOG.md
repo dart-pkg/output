@@ -32,3 +32,7 @@
 ## 1.0.4
 
 - Added: echoYaml() and dumpYaml()
+
+## 1.0.5
+
+- Changed dependent package from text_data to text_serializer

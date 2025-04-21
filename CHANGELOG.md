@@ -36,3 +36,7 @@
 ## 1.0.5
 
 - Changed dependent package from text_data to text_serializer
+
+## 1.0.6
+
+- Modified echoYaml() and dumpYaml because text_serializer.toYaml() has been modified

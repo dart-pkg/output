@@ -1,6 +1,6 @@
 name: output
-description: output package project
-version: 1.0.5
+description: output project
+version: 1.0.6
 homepage:
 repository: https://github.com/dart-pkg/output
 
@@ -8,10 +8,8 @@ environment:
   sdk: ^3.7.2
 
 dependencies:
-  text_serializer: ^2025.421.821
+  text_serializer: ^2025.421.1109
 
 dev_dependencies:
   test: ^1.25.15
   lints: ^5.1.1
-  embed: ^1.4.1
-  build_runner: ^2.4.15

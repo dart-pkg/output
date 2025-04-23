@@ -40,3 +40,7 @@
 ## 1.0.6
 
 - Modified echoYaml() and dumpYaml because text_serializer.toYaml() has been modified
+
+## 1.0.7
+
+- Updated depencency to text_serializer package to 2025.423.1447

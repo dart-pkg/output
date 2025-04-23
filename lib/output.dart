@@ -47,7 +47,7 @@ void echoYaml(dynamic $x, [String? $title]) {
 void dump(dynamic $x, [String? $title]) {
   final $lines = _textToLines(StackTrace.current.toString());
   String $line = '';
-  for (int i=0; i<$lines.length; i++) {
+  for (int i = 0; i < $lines.length; i++) {
     if ($lines[i].contains('output/output.dart')) {
       $line = $lines[i + 1];
       break;
@@ -71,7 +71,7 @@ void dump(dynamic $x, [String? $title]) {
 void dumpJson(dynamic $x, [String? $title]) {
   final $lines = _textToLines(StackTrace.current.toString());
   String $line = '';
-  for (int i=0; i<$lines.length; i++) {
+  for (int i = 0; i < $lines.length; i++) {
     if ($lines[i].contains('output/output.dart')) {
       $line = $lines[i + 1];
       break;
@@ -96,7 +96,7 @@ void dumpJson(dynamic $x, [String? $title]) {
 void dumpYaml(dynamic $x, [String? $title]) {
   final $lines = _textToLines(StackTrace.current.toString());
   String $line = '';
-  for (int i=0; i<$lines.length; i++) {
+  for (int i = 0; i < $lines.length; i++) {
     if ($lines[i].contains('output/output.dart')) {
       $line = $lines[i + 1];
       break;

@@ -1,15 +1,12 @@
-name: output
-description: output project
-version: 1.0.6
-homepage:
-repository: https://github.com/dart-pkg/output
-
+name: "output"
+description: "output project"
+version: "1.0.7"
+homepage: null
+repository: "https://github.com/dart-pkg/output"
 environment:
-  sdk: ^3.7.2
-
+  sdk: "^3.7.2"
 dependencies:
-  text_serializer: ^2025.421.1109
-
+  text_serializer: ^2025.423.1447
 dev_dependencies:
   test: ^1.25.15
   lints: ^5.1.1

@@ -2,39 +2,52 @@
 set -uvx
 set -e
 cwd=`pwd`
-#ts=`date "+%Y.%m%d.%H%M"`
-#version="${ts//.0/.}"
-version=`cat version.txt`
+version=$(pkgver)
 comment=$1
 
-echo [${version}]
+rm -rf tmp*
+
+rm -f *.exe
+find . -name "*.exe" -exec rm -f {} \;
+
+rm -f *.txt
+find . -name "*.txt" -exec rm -f {} \;
+
+echo $version
 
 pubspec "$version"
-#dart pub get
 
-#exit 0
+dart format .
+
+./do-analyze.sh
+./do-test.sh
+
+git checkout CHANGELOG.md
+diff=`git diff pubspec.yaml | sed "/^[^-+].*/d"`
 
 cat << EOS >> CHANGELOG.md
 
 ## $version
 
 - $comment
+
+\`\`\`
+$diff
+\`\`\`
 EOS
 
 dos2unix pubspec.yaml
 dos2unix CHANGELOG.md
 
-./do-analyze.sh
-./do-test.sh
-
 #exit 0
 
-tag="$version"
+dart pub publish --force
+
+cd $cwd
+tag="output-$version"
 git add .
-git commit -m"$comment"
+git commit -m"output: $comment"
 git tag -a "$tag" -m"$tag"
 git push origin "$tag"
 git push origin HEAD:main
 git remote -v
-
-dart pub publish --force

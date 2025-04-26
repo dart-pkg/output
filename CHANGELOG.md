@@ -44,3 +44,33 @@
 ## 1.0.7
 
 - Updated depencency to text_serializer package to 2025.423.1447
+
+## 2025.426.2027
+
+- Update dependencies
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-name: "output"
+-description: "output project"
+-version: "1.0.7"
+-homepage: null
++name: output
++description: |-
++  [output]
++  Small, easy to use logger.
++version: 2025.426.2027
++homepage:
++
++topics:
++- cli
++- logging
++
+-  sdk: "^3.7.2"
++  sdk: ^3.7.2
+-  text_serializer: ^2025.423.1447
++  text_serializer: ^2025.426.1009
++
++
+```

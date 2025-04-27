@@ -3,13 +3,12 @@ description: |-
   [output]
   Small, easy to use logger.
 version: 2025.426.2027
-homepage:
-repository: "https://github.com/dart-pkg/output"
+homepage: 
+repository: https://github.com/dart-pkg/output
 
 topics:
-- cli
-- logging
-
+  - cli
+  - logging
 environment:
   sdk: ^3.7.2
 dependencies:
@@ -17,5 +16,3 @@ dependencies:
 dev_dependencies:
   test: ^1.25.15
   lints: ^5.1.1
-
-

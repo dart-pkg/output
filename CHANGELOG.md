@@ -74,3 +74,16 @@
 +
 +
 ```
+
+## 2025.428.931
+
+- Update dependencies
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-version: 2025.426.2027
++version: 2025.428.931
+-  text_serializer: ^2025.426.1009
++  text_serializer: ^2025.428.923
+```

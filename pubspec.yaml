@@ -2,7 +2,7 @@ name: output
 description: |-
   [output]
   Small, easy to use logger.
-version: 2025.426.2027
+version: 2025.428.931
 homepage: 
 repository: https://github.com/dart-pkg/output
 
@@ -12,7 +12,7 @@ topics:
 environment:
   sdk: ^3.7.2
 dependencies:
-  text_serializer: ^2025.426.1009
+  text_serializer: ^2025.428.923
 dev_dependencies:
   test: ^1.25.15
   lints: ^5.1.1

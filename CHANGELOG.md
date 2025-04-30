@@ -87,3 +87,23 @@
 -  text_serializer: ^2025.426.1009
 +  text_serializer: ^2025.428.923
 ```
+
+## 2025.430.1731
+
+- Update package dependencies
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-version: 2025.428.931
++version: 2025.430.1731
++platforms:
++  android: 
++  ios: 
++  linux: 
++  macos: 
++  web: 
++  windows: 
+-  text_serializer: ^2025.428.923
++  text_serializer: ^2025.430.1719
+```

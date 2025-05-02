@@ -36,7 +36,7 @@ void echoJson(dynamic $x, [String? $title]) {
 
 // since v1.0.4
 void echoYaml(dynamic $x, [String? $title]) {
-  String $json = '[YAML]```\n${ts.toYaml($x)}```[/YAML]';
+  String $json = '[YAML]\n${ts.toYaml($x)}[/YAML]';
   if ($title == null) {
     print($json);
   } else {
@@ -108,7 +108,7 @@ void dumpYaml(dynamic $x, [String? $title]) {
   }
   final $lineInfo = '@ ${$line}';
   String $mode = _isInDebugMode ? 'DEBUG' : 'RELEASE';
-  String $json = '[YAML]```\n${ts.toYaml($x)}```[/YAML]';
+  String $json = '[YAML]\n${ts.toYaml($x)}[/YAML]';
   if ($title == null) {
     print('[${$mode}] ${$lineInfo}\n${$json}');
   } else {

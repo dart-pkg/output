@@ -120,3 +120,16 @@
 -  text_serializer: ^2025.430.1719
 +  text_serializer: ^2025.502.1557
 ```
+
+## 2025.502.1958
+
+- Changed output format of yaml type
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-version: 2025.502.1759
++version: 2025.502.1958
+-  text_serializer: ^2025.502.1557
++  text_serializer: ^2025.502.1757
+```
